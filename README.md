@@ -2,7 +2,7 @@
 
 ## Grupo 3
 
-Andrés Hernández
-Santiago Leal
-David Monsalve
-Julian Pardo
+Andrés Hernández<br>
+Santiago Leal<br>
+David Monsalve<br>
+Julian Pardo<br>
