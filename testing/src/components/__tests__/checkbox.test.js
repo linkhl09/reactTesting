@@ -26,4 +26,14 @@ describe("Testing Checkbox component", () => {
     const label = container.querySelector("label");
     expect(label.textContent).toBe("Inactive");
   });
+
+  it("Checkbox status and label changes when clicked", () => {
+    const checkbox = container.querySelector("input");
+    const label = container.querySelector("label");
+    act(()=> {
+      checkbox.dispatchEvent(new MouseEvent("click", {bubbles: true}));
+    });
+    expect(label.textContent).toBe("Active");
+    expect(checkbox.checked).toBe(true);
+  })
 });
