@@ -30,10 +30,10 @@ describe("Testing Checkbox component", () => {
   it("Checkbox status and label changes when clicked", () => {
     const checkbox = container.querySelector("input");
     const label = container.querySelector("label");
-    act(()=> {
-      checkbox.dispatchEvent(new MouseEvent("click", {bubbles: true}));
+    act(() => {
+      checkbox.dispatchEvent(new MouseEvent("click", { bubbles: true }));
     });
     expect(label.textContent).toBe("Active");
     expect(checkbox.checked).toBe(true);
-  })
+  });
 });
